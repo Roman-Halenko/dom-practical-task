@@ -20,17 +20,14 @@ li {
   list-style: none;
   margin-top: 8px;
   text-align: right;
-}
-
-a {
-  text-decoration: none;
   color: #fffef6;
   font-size: 24px;
   transition: 0.2s ease;
   font-weight: 200;
+  cursor: pointer;
 }
 
-a:hover {
+li:hover {
   color: #1e3d46;
 }
 
@@ -58,7 +55,7 @@ main {
   flex-basis: 80%;
 }
 
-span.btn-menu {
+span#btn-menu {
   display: none;
 }
 
@@ -76,7 +73,7 @@ span.btn-menu {
     flex-basis: 100%;
   }
 
-  span.btn-menu {
+  span#btn-menu {
     box-sizing: border-box;
     display: flex;
     position: absolute;
@@ -112,7 +109,7 @@ span.btn-menu {
   border-right:10px solid white;
 }
 
-.btn-menu::before, .btn-menu::after {
+#btn-menu::before, #btn-menu::after {
   content: "";
   border-top: 3px solid #ffffff;
   width: 80%;
@@ -122,11 +119,11 @@ span.btn-menu {
   border-radius: 1px;
 }
 
-.btn-menu::before {
+#btn-menu::before {
   top: 6px;
 }
 
-.btn-menu::after {
+#btn-menu::after {
   top: 13px;
 }
 
